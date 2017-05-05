@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="me.zgy.mapping.UserInfoDao">
+
+    <insert id="add">
+        insert into tb_user_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                name,
+            </if>
+            <if test="email != null">
+                email,
+            </if>
+            <if test="password != null">
+                password,
+            </if>
+            <if test="dob != null">
+                dob,
+            </if>
+            <if test="address != null">
+                address,
+            </if>
+            <if test="city != null">
+                city,
+            </if>
+            <if test="stateId != null">
+                state_id,
+            </if>
+            <if test="zip != null">
+                zip,
+            </if>
+            <if test="countryId != null">
+                country_id,
+            </if>
+            <if test="gender != null">
+                gender,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                #{name},
+            </if>
+            <if test="email != null">
+                #{email},
+            </if>
+            <if test="password != null">
+                #{password},
+            </if>
+            <if test="dob != null">
+                #{dob},
+            </if>
+            <if test="address != null">
+                #{address},
+            </if>
+            <if test="city != null">
+                #{city},
+            </if>
+            <if test="stateId != null">
+                #{stateId},
+            </if>
+            <if test="zip != null">
+                #{zip},
+            </if>
+            <if test="countryId != null">
+                #{countryId},
+            </if>
+            <if test="gender != null">
+                #{gender},
+            </if>
+        </trim>
+    </insert>
+
+    <sql id="UserInfoColumns">
+        name,
+        email,
+        password,
+        dob,
+        address,
+        city,
+        state_id,
+        zip,
+        country_id,
+        gender,
+        created_at,
+        updated_at
+    </sql>
+</mapper>

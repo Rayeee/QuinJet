@@ -7,7 +7,8 @@
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
         <property name="locations">
             <list>
-                <value>classpath:log4j.properties</value>
+                <value>file:conf/log4j.properties</value>
+                <value>file:conf/jdbc.properties</value>
             </list>
         </property>
     </bean>

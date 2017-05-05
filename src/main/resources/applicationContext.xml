@@ -15,9 +15,9 @@
 			http://www.springframework.org/schema/aop
 			http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
 
-    <!--<context:component-scan base-package="com"/>-->
-
+    <context:component-scan base-package="me.zgy"/>
 
     <import resource="applicationContext-properties.xml"/>
+    <import resource="applicationContext-dataSource.xml"/>
 
 </beans>
