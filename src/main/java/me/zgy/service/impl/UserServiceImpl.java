@@ -4,6 +4,7 @@ import me.zgy.api.UserService;
 import me.zgy.bean.entity.UserInfoEntity;
 import me.zgy.bean.param.UserInfoParam;
 import me.zgy.mapping.UserInfoDao;
+import me.zgy.routing.DataSource;
 import org.apache.log4j.Logger;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,7 @@ public class UserServiceImpl implements UserService {
     private UserInfoDao userInfoDao;
 
     @Override
+    @DataSource("dataSource2")
     public void addUser(UserInfoParam param) {
         UserInfoEntity userInfoEntity = new UserInfoEntity();
         BeanUtils.copyProperties(param, userInfoEntity);
