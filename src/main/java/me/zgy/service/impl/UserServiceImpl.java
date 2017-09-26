@@ -5,7 +5,6 @@ import me.zgy.bean.entity.UserInfoEntity;
 import me.zgy.bean.param.UserInfoParam;
 import me.zgy.mapping.UserInfoDao;
 import me.zgy.routing.DataSource;
-import org.apache.log4j.Logger;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -16,8 +15,6 @@ import javax.annotation.Resource;
  */
 @Service
 public class UserServiceImpl implements UserService {
-
-    private static final Logger logger = Logger.getLogger(UserServiceImpl.class);
 
     @Resource
     private UserInfoDao userInfoDao;
