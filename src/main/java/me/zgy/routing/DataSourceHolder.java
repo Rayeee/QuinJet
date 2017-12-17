@@ -1,11 +1,8 @@
 package me.zgy.routing;
 
-import org.springframework.stereotype.Service;
-
 /**
  * Created by Rayee on 2017/9/22.
  */
-@Service
 public class DataSourceHolder {
 
     private static final ThreadLocal<String> routingKey = new ThreadLocal<>();
