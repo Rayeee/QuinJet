@@ -9,6 +9,7 @@
             <list>
                 <value>file:conf/log4j.properties</value>
                 <value>file:conf/jdbc.properties</value>
+                <value>file:conf/elasticsearch.properties</value>
             </list>
         </property>
     </bean>

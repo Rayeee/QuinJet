@@ -19,6 +19,7 @@
 
     <import resource="applicationContext-properties.xml"/>
     <import resource="applicationContext-dataSource.xml"/>
+    <import resource="classpath:elasticsearch-support-context.xml"/>
 
     <bean id="threadPoolTaskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
         <property name="corePoolSize" value="20"/>
